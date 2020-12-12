@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navuser"
+    app:startDestination="@id/query">
+
+    <fragment
+        android:id="@+id/query"
+        android:name="com.yll.as.query.QueryFragment"
+        android:label="机具库存查询"
+        tools:layout="@layout/query_fragment" />
+    <fragment
+        android:id="@+id/apply"
+        android:name="com.yll.as.apply.ApplyFragment"
+        android:label="机具借用申请"
+        tools:layout="@layout/apply_fragment" />
+
+</navigation>

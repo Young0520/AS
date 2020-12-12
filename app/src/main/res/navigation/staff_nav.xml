@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navstaff"
+    app:startDestination="@id/query">
+
+    <fragment
+        android:id="@+id/query"
+        android:name="com.yll.as.query.QueryFragment"
+        android:label="库存查询"
+        tools:layout="@layout/query_fragment" />
+    <fragment
+        android:id="@+id/userAudit"
+        android:name="com.yll.as.userAudit.UserAuditFragment"
+        android:label="新用户审批"
+        tools:layout="@layout/apply_fragment" />
+    <fragment
+        android:id="@+id/machineAudit"
+        android:name="com.yll.as.machineAudit.MachineAuditFragment"
+        android:label="借用审批"
+        tools:layout="@layout/apply_fragment" />
+
+</navigation>
